@@ -20,7 +20,6 @@ class MyApplication extends StatelessWidget {
     return  MaterialApp(
      theme: ApplicationThemeManager.lightTheme,
       debugShowCheckedModeBanner: false,
-      title: "News App",
       initialRoute: PageRouteName.initial,
       onGenerateRoute: Routes.onGenerateRouteSettings,
       navigatorKey: navigatorKey,

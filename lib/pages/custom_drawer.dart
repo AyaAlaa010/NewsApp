@@ -1,10 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/core/config/constants.dart';
+import 'package:news_app/pages/home/category_item.dart';
 import '../core/config/app_colors.dart';
 
 class CustomDrawer extends StatelessWidget {
-  const CustomDrawer({super.key});
+
+  final Function onCategoriesDrawerClick;
+
+  const CustomDrawer({super.key, required this.onCategoriesDrawerClick});
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +27,9 @@ class CustomDrawer extends StatelessWidget {
           ),
           const SizedBox(height: 25,),
           InkWell(
-            onTap: (){},
+            onTap: (){onCategoriesDrawerClick();},
             child: Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(10),
               child: Row(
                 children: [
                  const Icon(Icons.list,size: 40,color: Colors.black,),
@@ -35,12 +39,11 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 15,),
 
           InkWell(
             onTap: (){},
             child: Padding(
-                padding:const EdgeInsets.all(20),
+                padding:const EdgeInsets.all(10),
                 child: Row(
                   children: [
                     const Icon(Icons.settings,size: 40,color: Colors.black,),

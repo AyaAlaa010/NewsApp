@@ -26,10 +26,10 @@ class HomeView extends StatelessWidget {
             Text("Pick your category \n of interest",
               style: Constants.theme.textTheme.bodyLarge!.copyWith(height: 1.15)
               ,textAlign: TextAlign.start,),
-             const SizedBox(height: 20,),
+             const SizedBox(height: 10,),
              Expanded(
                child: GridView.builder(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount
-                (crossAxisCount: 2,crossAxisSpacing: 10,mainAxisSpacing: 10,childAspectRatio: 4/5),
+                (crossAxisCount: 2,crossAxisSpacing: 10,mainAxisSpacing: 10,childAspectRatio: 8/9),
                   itemBuilder: (context,index){
                 return CategoryItemWidget( categoryItem:categoriesList[index],index:index);
                

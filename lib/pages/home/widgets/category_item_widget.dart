@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/core/config/constants.dart';
-import 'package:news_app/pages/home/category_item.dart';
+import 'package:news_app/models/category_item.dart';
 
 class CategoryItemWidget extends StatelessWidget {
 

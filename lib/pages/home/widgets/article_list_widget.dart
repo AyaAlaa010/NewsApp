@@ -44,6 +44,7 @@ class ArticleListWidget extends StatelessWidget {
                 .copyWith(color: Colors.black),
           ));
       }
+
     });
 
     // FutureBuilder(

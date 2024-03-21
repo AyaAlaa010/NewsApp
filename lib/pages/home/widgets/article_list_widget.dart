@@ -17,7 +17,6 @@ class ArticleListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<ArticlesViewModel>(builder:(context, vm, child) {
       if(vm.articlesList.isEmpty){
-
      return   const Center(
           child: CircularProgressIndicator(
             color: AppColors.primaryColor,

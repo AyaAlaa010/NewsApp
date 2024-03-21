@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:news_app/core/config/app_colors.dart';
 import 'package:news_app/models/articles_model.dart';
 import 'package:news_app/network/ApiManager.dart';
+import 'package:news_app/pages/home/viewModels/articleViewModel.dart';
+import 'package:provider/provider.dart';
 
 import '../../../core/config/constants.dart';
 import 'article_item_widget.dart';
@@ -13,7 +15,36 @@ class ArticleListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
+    return Consumer<ArticlesViewModel>(builder:(context, vm, child) {
+      if(vm.articlesList.isEmpty){
+
+     return   const Center(
+          child: CircularProgressIndicator(
+            color: AppColors.primaryColor,
+          ),
+        );
+      }
+      else{
+       return  Expanded(
+          child: ListView.builder(
+            itemBuilder: (context, index) {
+              return ArticleItemWidget(articlesModel: vm.articlesList[index]);
+            },
+            itemCount: vm.articlesList.length,
+          ),
+        );
+
+      }
+
+
+    }
+
+
+    );
+
+
+
+      FutureBuilder(
         future: ApiManager.fetchDataArticles(sourceId),
         builder: (context, snapshots) {
           if (snapshots.hasError) {

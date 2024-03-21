@@ -43,36 +43,36 @@ class ArticleListWidget extends StatelessWidget {
 
 
 
-      FutureBuilder(
-        future: ApiManager.fetchDataArticles(sourceId),
-        builder: (context, snapshots) {
-          if (snapshots.hasError) {
-            return Center(
-                child: Text(
-              "Some thing went wrong !!",
-              style: Constants.theme.textTheme.bodyMedium!
-                  .copyWith(color: Colors.black),
-            ));
-          }
-
-          if (snapshots.connectionState == ConnectionState.waiting) {
-            return const Center(
-              child: CircularProgressIndicator(
-                color: AppColors.primaryColor,
-              ),
-            );
-          }
-
-          List<ArticlesModel> articlesList = snapshots.data ?? [];
-
-          return Expanded(
-            child: ListView.builder(
-              itemBuilder: (context, index) {
-                return ArticleItemWidget(articlesModel: articlesList[index]);
-              },
-              itemCount: articlesList.length,
-            ),
-          );
-        });
+      // FutureBuilder(
+      //   future: ApiManager.fetchDataArticles(sourceId),
+      //   builder: (context, snapshots) {
+      //     if (snapshots.hasError) {
+      //       return Center(
+      //           child: Text(
+      //         "Some thing went wrong !!",
+      //         style: Constants.theme.textTheme.bodyMedium!
+      //             .copyWith(color: Colors.black),
+      //       ));
+      //     }
+      //
+      //     if (snapshots.connectionState == ConnectionState.waiting) {
+      //       return const Center(
+      //         child: CircularProgressIndicator(
+      //           color: AppColors.primaryColor,
+      //         ),
+      //       );
+      //     }
+      //
+      //     List<ArticlesModel> articlesList = snapshots.data ?? [];
+      //
+      //     return Expanded(
+      //       child: ListView.builder(
+      //         itemBuilder: (context, index) {
+      //           return ArticleItemWidget(articlesModel: articlesList[index]);
+      //         },
+      //         itemCount: articlesList.length,
+      //       ),
+      //     );
+      //   });
   }
 }

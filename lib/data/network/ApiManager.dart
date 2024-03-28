@@ -4,12 +4,14 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:news_app/models/articles_model.dart';
 
-import '../core/config/constants.dart';
-import '../data/models/source_model.dart';
+import '../../core/config/constants.dart';
+import '../models/source_model.dart';
+
+
 
 class ApiManager{
 
- static Future<List<SourceModel>> fetchDataSource(String dataSourceId) async {
+  Future<List<SourceModel>> fetchDataSource(String dataSourceId) async {
     List <SourceModel>  dataSourcesList=[];
 
     Map<String,dynamic> queryParams={"apiKey":Constants.API_KEY,"category":dataSourceId};
@@ -36,7 +38,7 @@ class ApiManager{
   }
 
   
-  static Future<List<ArticlesModel>> fetchDataArticles(String sourceId) async{
+   Future<List<ArticlesModel>> fetchDataArticles(String sourceId) async{
 
    List<ArticlesModel> articlesList=[];
     Map<String, dynamic> queryParams={"apiKey":Constants.API_KEY,"sources":sourceId};

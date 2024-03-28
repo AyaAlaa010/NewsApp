@@ -1,9 +1,10 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/network/ApiManager.dart';
 import 'package:news_app/pages/home/viewModels/articles_cubit/stats_article.dart';
 
-import '../../../../models/articles_model.dart';
+import '../../../../data/models/articles_model.dart';
+import '../../../../data/network/ApiManager.dart';
+
 
 class ArticlesCubit extends Cubit<ArticlesStates> {
   ArticlesCubit() : super(LoadingStatesArticles());

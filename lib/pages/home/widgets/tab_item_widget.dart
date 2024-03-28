@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/core/config/app_colors.dart';
-import 'package:news_app/models/source_model.dart';
 
 import '../../../core/config/constants.dart';
+import '../../../data/models/source_model.dart';
 
 class TabItemWidget extends StatelessWidget {
   final SourceModel sourceModel;

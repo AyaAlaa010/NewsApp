@@ -4,8 +4,8 @@ import 'package:news_app/core/config/constants.dart';
 import 'package:news_app/core/widgets/custom_background_widget.dart';
 import 'package:news_app/main.dart';
 import 'package:news_app/pages/custom_drawer.dart';
-import 'package:news_app/models/category_item.dart';
 import 'package:news_app/pages/home/pages/category_view.dart';
+import '../../../data/models/category_item.dart';
 import '../widgets/category_item_widget.dart';
 
 class HomeView extends StatefulWidget {

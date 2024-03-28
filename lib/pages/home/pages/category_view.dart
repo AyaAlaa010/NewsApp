@@ -2,13 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/core/config/app_colors.dart';
-import 'package:news_app/core/widgets/custom_background_widget.dart';
-import 'package:news_app/models/category_item.dart';
-import 'package:news_app/models/source_model.dart';
-import 'package:news_app/network/ApiManager.dart';
+
 import 'package:news_app/pages/home/widgets/news_list_view.dart';
 
 import '../../../core/config/constants.dart';
+import '../../../data/models/category_item.dart';
 import '../viewModels/category_cubit/category_states.dart';
 import '../viewModels/category_cubit/cubit.dart';
 import '../widgets/tab_item_widget.dart';

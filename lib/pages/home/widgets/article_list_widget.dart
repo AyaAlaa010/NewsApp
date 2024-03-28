@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/core/config/app_colors.dart';
-import 'package:news_app/models/articles_model.dart';
-import 'package:news_app/network/ApiManager.dart';
 import 'package:news_app/pages/home/viewModels/articles_cubit/cubit_article.dart';
 
 import '../../../core/config/constants.dart';

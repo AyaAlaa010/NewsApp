@@ -9,7 +9,7 @@ import '../../../core/config/constants.dart';
 import '../../../data/models/category_item.dart';
 import '../viewModels/category_cubit/category_states.dart';
 import '../viewModels/category_cubit/cubit.dart';
-import '../widgets/tab_item_widget.dart';
+
 
 class CategoryView extends StatefulWidget {
   final CategoryItem categoryItem;

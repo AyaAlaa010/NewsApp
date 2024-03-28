@@ -1,10 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/core/config/app_colors.dart';
 
 import '../../../core/config/constants.dart';
-import '../../../data/models/articles_model.dart';
+import '../../../models/articles_model.dart';
 
 class ArticleItemWidget extends StatelessWidget {
   final ArticlesModel articlesModel;

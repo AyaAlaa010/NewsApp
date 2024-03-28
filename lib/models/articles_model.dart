@@ -1,4 +1,5 @@
-import 'package:news_app/models/source_model.dart';
+
+import '../data/models/source_model.dart';
 
 class ArticlesModel {
   final SourceModel source;

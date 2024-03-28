@@ -3,9 +3,9 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:news_app/models/articles_model.dart';
-import 'package:news_app/models/source_model.dart';
 
 import '../core/config/constants.dart';
+import '../data/models/source_model.dart';
 
 class ApiManager{
 

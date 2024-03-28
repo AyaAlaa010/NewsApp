@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../data/models/source_model.dart';
-import '../../../../data/network/ApiManager.dart';
+import '../../../../network/ApiManager.dart';
 import 'category_states.dart';
 
 class CategoryCubit extends Cubit<CategoryStates> {

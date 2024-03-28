@@ -1,4 +1,5 @@
-import '../../../../models/source_model.dart';
+
+import '../../../../data/models/source_model.dart';
 
 sealed class CategoryStates {}
 

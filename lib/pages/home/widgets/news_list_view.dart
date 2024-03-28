@@ -1,12 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/network/ApiManager.dart';
 import 'package:news_app/pages/home/viewModels/articles_cubit/cubit_article.dart';
-import 'package:news_app/pages/home/viewModels/articles_cubit/stats_article.dart';
 import 'package:news_app/pages/home/widgets/article_list_widget.dart';
 
-import '../../../models/source_model.dart';
+import '../../../data/models/source_model.dart';
 import 'tab_item_widget.dart';
 
 class NewsListView extends StatefulWidget {

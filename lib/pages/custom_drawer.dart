@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app/core/config/constants.dart';
-import 'package:news_app/models/category_item.dart';
 import '../core/config/app_colors.dart';
 
 class CustomDrawer extends StatelessWidget {

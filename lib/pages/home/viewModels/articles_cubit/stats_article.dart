@@ -1,4 +1,5 @@
-import '../../../../models/articles_model.dart';
+
+import '../../../../data/models/articles_model.dart';
 
 sealed class ArticlesStates {}
 
